@@ -35,9 +35,11 @@ export default defineComponent({
 
       const daysDisplay = days <= 7 ? futureDay : `${days} days`;
       const hoursDisplay = hours < 10 ? `0${hours}` : hours;
+      const minutesDisplay = minutes < 10 ? `0${minutes}` : minutes;
+      const secondsDisplay = seconds < 10 ? `0${seconds}` : seconds;
 
       countdown.value = `${daysDisplay}, ${hoursDisplay}:${
-        minutes}:${seconds}`;
+        minutesDisplay}:${secondsDisplay}`;
 
       if (distance < 0) {
         clearInterval(timer);
