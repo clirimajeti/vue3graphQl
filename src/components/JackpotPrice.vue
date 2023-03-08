@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="JackpotPrice">
         {{ winningPrice }}
     </div>
 </template>
